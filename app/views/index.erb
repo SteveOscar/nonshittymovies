@@ -1,0 +1,12 @@
+<h1>All Tasks</h1>
+
+<% @tasks.each do |task| %>
+  <div class="task-<%="#{task.id}"%>">
+    <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
+    <a href="/tasks/<%= task.id %>/edit" id="edit-button">edit</a>
+    <form action="/tasks/<%= task.id %>" method="POST">
+      <input type="hidden" name="_method" value="DELETE">
+      <input type="submit" value="delete">
+    </form>
+  </div>
+<% end %>

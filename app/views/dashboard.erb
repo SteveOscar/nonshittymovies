@@ -1,0 +1,9 @@
+<h1>Which non-shit movie?</h1>
+
+<ul>
+  <li><a href="/new">New Release</a></li>
+  <li><a href="/all">In Theaters</a></li>
+  <% @movies.each do |data| %>
+    <%= data %><br>
+  <% end %>
+</ul>
