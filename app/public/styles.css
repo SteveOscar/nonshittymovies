@@ -1,0 +1,21 @@
+/*
+  ========================================
+  body
+  ========================================
+*/
+body {
+  background-color: salmon;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: seashell;
+}
+
+.welcome {
+  margin: 20%;
+}
+.btn {
+  margin: 8px;
+}
+img {
+  max-width: 500px;
+}

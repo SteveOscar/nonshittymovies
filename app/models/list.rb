@@ -32,7 +32,7 @@ class List
     agent = Mechanize.new
     page = agent.get("http://www.bing.com/images/search?q=#{film.gsub(' ', '+')}+movie+2015")
     page.links.each { |link| @links << link.href }
-    (@links.select { |a| a.include?(".jpg") }).first
+    (@links.select { |a| a.include?(".jpg") }).sample
   end
 
 
@@ -63,15 +63,15 @@ class List
   end
 
   def great
-    ["is fucking great.", "is going to blow you the fuck away.", "is almost better than road head."]
+    ["is fucking great.", "is seriously good.", "is almost better than road head.", "is a cinematic orgasm"]
   end
 
   def good
-    ["is pretty goddam decent.", "should keep you off your phone.", "is worth not staying home for."]
+    ["is pretty goddam decent.", "should keep you off your phone.", "is worth putting pants on for."]
   end
 
   def mediocre
-    ["is... probably fairly unshitty.", "beats boredom, at least.", "is better than bad."]
+    ["is... fairly unshitty.", "beats boredom, at least.", "ain't a classic, but it'll do."]
   end
 
 end
