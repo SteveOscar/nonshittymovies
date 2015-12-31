@@ -27,7 +27,7 @@ class List
     @movies[0..45]
   end
 
-  # the discontinued hotlinking poster scraper... 
+  # the discontinued hotlinking poster scraper...
   # def fetch_poster(film)
   #   @links = []
   #   agent = Mechanize.new
@@ -68,7 +68,7 @@ class List
   end
 
   def great
-    ["is fucking great.", "is seriously good.", "is almost better than road head.", "is a cinematic orgasm"]
+    ["is fucking great.", "is seriously good.", "is the best movie playing.", "is a cinematic orgasm"]
   end
 
   def good
