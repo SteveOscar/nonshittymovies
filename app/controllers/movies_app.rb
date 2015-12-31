@@ -8,6 +8,7 @@ class MoviesApp < Sinatra::Base
     list = List.new
     @movies = list.best_new_release[0]
     @comment = list.comment(@movies)
+    @poster = list.fetch_poster(@movies[:title])
     erb :new
   end
 
@@ -15,6 +16,7 @@ class MoviesApp < Sinatra::Base
     list = List.new
     @movies = list.best_new_release[1]
     @comment = list.comment(@movies)
+    @poster = list.fetch_poster(@movies[:title])
     erb :new2
   end
 
@@ -22,6 +24,7 @@ class MoviesApp < Sinatra::Base
     list = List.new
     @movies = list.best_new_release[2]
     @comment = list.comment(@movies)
+    @poster = list.fetch_poster(@movies[:title])
     erb :new3
   end
 
@@ -29,6 +32,7 @@ class MoviesApp < Sinatra::Base
     list = List.new
     @movies = list.best_in_theaters[0]
     @comment = list.comment(@movies)
+    @poster = list.fetch_poster(@movies[:title])
     erb :all
   end
 
@@ -36,6 +40,7 @@ class MoviesApp < Sinatra::Base
     list = List.new
     @movies = list.best_in_theaters[1]
     @comment = list.comment(@movies)
+    @poster = list.fetch_poster(@movies[:title])
     erb :all2
   end
 
@@ -43,6 +48,7 @@ class MoviesApp < Sinatra::Base
     list = List.new
     @movies = list.best_in_theaters[2]
     @comment = list.comment(@movies)
+    @poster = list.fetch_poster(@movies[:title])
     erb :all3
   end
 

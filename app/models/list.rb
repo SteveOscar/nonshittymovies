@@ -1,4 +1,5 @@
 require 'open-uri'
+require 'mechanize'
 
 class List
 
@@ -25,6 +26,15 @@ class List
     scrape(doc)
     @movies[0..45]
   end
+
+  def fetch_poster(film)
+    @links = []
+    agent = Mechanize.new
+    page = agent.get("http://www.bing.com/images/search?q=#{film.gsub(' ', '+')}+movie+2015")
+    page.links.each { |link| @links << link.href }
+    (@links.select { |a| a.include?(".jpg") }).first
+  end
+
 
   def scrape(doc)
     doc.css(".product_groups_module li.product").each do |item|
@@ -57,7 +67,7 @@ class List
   end
 
   def good
-    ["is pretty goddam decent.", "should hold keep you off your phone.", "is worth not staying home for."]
+    ["is pretty goddam decent.", "should keep you off your phone.", "is worth not staying home for."]
   end
 
   def mediocre
