@@ -68,3 +68,7 @@ img {
 p {
   color: black;
 }
+#poop {
+  max-width: 100px;
+  margin: 20px;
+}
