@@ -32,7 +32,7 @@ class List
     agent = Mechanize.new
     page = agent.get("http://www.bing.com/images/search?q=#{film.gsub(' ', '+')}+movie+2015")
     page.links.each { |link| @links << link.href }
-    (@links.select { |a| a.include?(".jpg") }).sample
+    (@links.select { |a| a.include?(".jpg") })[0..7].sample
   end
 
 

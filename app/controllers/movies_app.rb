@@ -52,6 +52,10 @@ class MoviesApp < Sinatra::Base
     erb :all3
   end
 
+  get '/info' do
+    erb :info
+  end
+
   not_found do
     erb :error
   end

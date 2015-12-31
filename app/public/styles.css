@@ -4,18 +4,54 @@
   ========================================
 */
 body {
-  background-color: salmon;
+  background-color: white;
   font-family: 'Nunito', sans-serif;
   text-align: center;
-  color: seashell;
+  color: teal;
+}
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: salmon;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0px;
 }
 
 .welcome {
-  margin: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .btn {
   margin: 8px;
 }
 img {
+  max-width: 300px;
+  max-height: 300px;
+}
+.content {
   max-width: 500px;
+  margin: auto;
+  padding-top: 15px;
+}
+.banner {
+  background-color: teal;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: white;
+}
+.score {
+  padding-top: 50px;
+}
+.poster {
+  padding-top: 8px;
 }
