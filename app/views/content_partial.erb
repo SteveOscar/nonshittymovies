@@ -6,8 +6,8 @@
   <div class="score">
     <h6>Metacritic Score: <%= @movies[:score] %> </h6>
   </div>
-  
+
   <div class="poster">
-    <img src="<%= @poster %>" />
+    <a target="blank" href="http://www.metacritic.com/movie/<%=@movies[:title].downcase.gsub(' ', '-')%>"><img src="<%= @poster %>" /></a>
   </div>
 </div>
