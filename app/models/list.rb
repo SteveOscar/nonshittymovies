@@ -45,4 +45,23 @@ class List
     (@movies.select { |hash| hash[:release_date] == @date }).sort_by { |hsh| hsh[:score] }.reverse
   end
 
+  def comment(movie)
+    comment = great.sample if movie[:score].to_i >= 85
+    comment = good.sample if movie[:score].to_i >= 70 && movie[:score].to_i < 85
+    comment = mediocre.sample if movie[:score].to_i < 70
+    comment
+  end
+
+  def great
+    ["is fucking great.", "is going to blow you the fuck away.", "is almost better than road head."]
+  end
+
+  def good
+    ["is pretty goddam decent.", "should hold keep you off your phone.", "is worth not staying home for."]
+  end
+
+  def mediocre
+    ["is... probably fairly unshitty.", "beats boredom, at least.", "is better than bad."]
+  end
+
 end
