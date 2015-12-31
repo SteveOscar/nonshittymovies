@@ -27,12 +27,17 @@ class List
     @movies[0..45]
   end
 
+  # the discontinued hotlinking poster scraper... 
+  # def fetch_poster(film)
+  #   @links = []
+  #   agent = Mechanize.new
+  #   page = agent.get("http://www.bing.com/images/search?q=#{film.gsub(' ', '+')}+movie+2015")
+  #   page.links.each { |link| @links << link.href }
+  #   link = (@links.select { |a| a.include?(".jpg") })[0..7].first
+  # end
+
   def fetch_poster(film)
-    @links = []
-    agent = Mechanize.new
-    page = agent.get("http://www.bing.com/images/search?q=#{film.gsub(' ', '+')}+movie+2015")
-    page.links.each { |link| @links << link.href }
-    (@links.select { |a| a.include?(".jpg") })[0..7].sample
+    "/images/#{film.downcase.gsub(' ', '-')}.jpg"
   end
 
 
