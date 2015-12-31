@@ -4,7 +4,7 @@
   ========================================
 */
 body {
-  background-color: whitesmoke;
+  background-color: lightcyan;
   font-family: 'Nunito', sans-serif;
   text-align: center;
   color: teal;
@@ -12,7 +12,7 @@ body {
 body:before, body:after {
   content: "";
   position: fixed;
-  background: salmon;
+  background: black;
   left: 0;
   right: 0;
   height: 20px;
@@ -44,11 +44,18 @@ img {
   padding-top: 15px;
 }
 .banner {
-  background-color: teal;
+  background-color: slategrey;
   position: absolute;
   left: 0;
   right: 0;
-  color: white;
+  color: lightcyan;
+}
+footer {
+  background-color: lightcyan;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 87%
 }
 .score {
   padding-top: 50px;
@@ -65,10 +72,30 @@ img {
   margin-top: 15px;
   max-width: 500px;
 }
+
+
+#headline {
+  font-size: 2rem;
+}
+@media screen and (min-width: 500px){
+  #headline{
+    font-size: 3.5rem;
+  }
+}
+
+
 p {
   color: black;
 }
 #poop {
   max-width: 100px;
   margin: 20px;
+}
+#footer_poop_left {
+  max-width: 50px;
+  float: left;
+}
+#footer_poop_right {
+  max-width: 50px;
+  float: right;
 }
