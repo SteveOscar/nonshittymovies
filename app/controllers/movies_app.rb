@@ -6,50 +6,30 @@ class MoviesApp < Sinatra::Base
 
   get '/new' do
     list = List.new
-    @movies = list.best_new_release[0]
-    @comment = list.comment(@movies)
-    @poster = list.fetch_poster(@movies[:title])
+    @movie1 = list.best_new_release[0]
+    @comment1 = list.comment(@movie1)
+    @poster1 = list.fetch_poster(@movie1[:title])
+    @movie2 = list.best_new_release[1]
+    @comment2 = list.comment(@movie2)
+    @poster2 = list.fetch_poster(@movie2[:title])
+    @movie3 = list.best_new_release[2]
+    @comment3 = list.comment(@movie3)
+    @poster3 = list.fetch_poster(@movie3[:title])
     erb :new
-  end
-
-  get '/new/2' do
-    list = List.new
-    @movies = list.best_new_release[1]
-    @comment = list.comment(@movies)
-    @poster = list.fetch_poster(@movies[:title])
-    erb :new2
-  end
-
-  get '/new/3' do
-    list = List.new
-    @movies = list.best_new_release[2]
-    @comment = list.comment(@movies)
-    @poster = list.fetch_poster(@movies[:title])
-    erb :new3
   end
 
   get '/all' do
     list = List.new
-    @movies = list.best_in_theaters[0]
-    @comment = list.comment(@movies)
-    @poster = list.fetch_poster(@movies[:title])
+    @movie1 = list.best_in_theaters[0]
+    @comment1 = list.comment(@movie1)
+    @poster1 = list.fetch_poster(@movie1[:title])
+    @movie2 = list.best_in_theaters[1]
+    @comment2 = list.comment(@movie2)
+    @poster2 = list.fetch_poster(@movie2[:title])
+    @movie3 = list.best_in_theaters[2]
+    @comment3 = list.comment(@movie3)
+    @poster3 = list.fetch_poster(@movie3[:title])
     erb :all
-  end
-
-  get '/all/2' do
-    list = List.new
-    @movies = list.best_in_theaters[1]
-    @comment = list.comment(@movies)
-    @poster = list.fetch_poster(@movies[:title])
-    erb :all2
-  end
-
-  get '/all/3' do
-    list = List.new
-    @movies = list.best_in_theaters[2]
-    @comment = list.comment(@movies)
-    @poster = list.fetch_poster(@movies[:title])
-    erb :all3
   end
 
   get '/info' do

@@ -24,7 +24,7 @@ class List
     url = "http://www.metacritic.com/browse/movies/release-date/theaters/date"
     doc = Nokogiri::HTML(open(url, "User-Agent" => "Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/20100101 Firefox/12.0 FirePHP/0.7.1"))
     scrape(doc)
-    @movies[0..45]
+    @movies[0..30]
   end
 
   # the discontinued hotlinking poster scraper...

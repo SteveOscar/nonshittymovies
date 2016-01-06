@@ -38,27 +38,26 @@ img {
   max-height: 300px;
   border-radius: 5%;
 }
+.container {
+  width: 95%;
+}
 .content {
-  max-width: 500px;
-  margin: auto;
+  max-width: 100%;
+  margin-top: 17px;
   padding-top: 15px;
 }
 .banner {
-  background-color: slategrey;
-  position: absolute;
-  left: 0;
-  right: 0;
-  color: lightcyan;
+  color: slategrey;
 }
 footer {
   background-color: lightcyan;
-  position: fixed;
   left: 0;
   right: 0;
-  top: 87%
+  top: 87%;
+  z-index: -1;
 }
 .score {
-  padding-top: 65px;
+  padding-top: 10px;
 }
 .poster {
   padding-top: 8px;
