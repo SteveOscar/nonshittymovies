@@ -1,4 +1,6 @@
+<br>
 <h4>The best recent releases:</h4>
+<% if @movie1[:score].to_i <= 60 && @movie2[:score].to_i <= 60 && @movie3[:score].to_i <= 60 %>
+  <h5>Warning: Shitty Movie Week</h5>
+<% end %>
 <%= erb :content_partial %>
-
-<!-- <h6> <a class="waves-effect waves-light btn white teal-text" href="new/2">Ehh, next option</a></h6> -->

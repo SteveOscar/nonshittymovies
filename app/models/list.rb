@@ -64,7 +64,8 @@ class List
   def comment(movie)
     comment = great.sample if movie[:score].to_i >= 85
     comment = good.sample if movie[:score].to_i >= 70 && movie[:score].to_i < 85
-    comment = mediocre.sample if movie[:score].to_i < 70
+    comment = mediocre.sample if (movie[:score].to_i) > 50 && (movie[:score].to_i < 69)
+    comment = bad.sample if movie[:score].to_i <= 50
     comment
   end
 
@@ -78,6 +79,10 @@ class List
 
   def mediocre
     ["is... fairly unshitty.", "beats boredom, at least.", "ain't a classic, but it'll do."]
+  end
+
+  def bad
+    ["will kind of suck.", "isn't very good.", "is hard to recommend.", "will be shit."]
   end
 
 end

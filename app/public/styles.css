@@ -23,7 +23,9 @@ body:before {
 body:after {
   bottom: 0px;
 }
-
+h5 {
+  color: red;
+}
 .welcome {
   margin-left: 15%;
   margin-right: 15%;
@@ -71,8 +73,6 @@ footer {
   margin-top: 15px;
   max-width: 500px;
 }
-
-
 #headline {
   font-size: 2rem;
 }
@@ -81,8 +81,6 @@ footer {
     font-size: 3.5rem;
   }
 }
-
-
 p {
   color: black;
 }
