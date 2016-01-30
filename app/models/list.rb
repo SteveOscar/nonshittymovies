@@ -38,6 +38,9 @@ class List
   # end
 
   def fetch_poster(film)
+    # @ff = Fotofetch::Fetch.new
+    # link = @ff.fetch_links("tesla", 1)
+    # @ff.save_images(link, './images')
     "/images/#{film.downcase.gsub(' ', '-')}.jpg"
   end
 
