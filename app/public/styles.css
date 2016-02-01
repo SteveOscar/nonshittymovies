@@ -75,6 +75,13 @@ footer {
 }
 #headline {
   font-size: 2rem;
+  opacity: 0;
+}
+#turds {
+  opacity: 0;
+}
+#show-me {
+  opacity: 0;
 }
 @media screen and (min-width: 500px){
   #headline{
@@ -87,6 +94,7 @@ p {
 #poop {
   max-width: 100px;
   margin: 20px;
+  opacity: 0;
 }
 #footer_poop_left {
   max-width: 50px;
