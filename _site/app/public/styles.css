@@ -1,0 +1,106 @@
+/*
+  ========================================
+  body
+  ========================================
+*/
+body {
+  background-color: lightcyan;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: teal;
+}
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: black;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0px;
+}
+h5 {
+  color: red;
+}
+.welcome {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top: 70px;
+}
+.btn {
+  margin: 8px;
+}
+img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 5%;
+}
+.container {
+  width: 95%;
+}
+.content {
+  max-width: 100%;
+  margin-top: 17px;
+  padding-top: 15px;
+}
+.banner {
+  color: slategrey;
+}
+footer {
+  background-color: lightcyan;
+  left: 0;
+  right: 0;
+  top: 87%;
+  z-index: -1;
+}
+.score {
+  padding-top: 10px;
+}
+.poster {
+  padding-top: 8px;
+}
+.btn-floating {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.info {
+  margin: auto;
+  margin-top: 15px;
+  max-width: 500px;
+}
+#headline {
+  font-size: 2rem;
+  opacity: 0;
+}
+#turds {
+  opacity: 0;
+}
+#show-me {
+  opacity: 0;
+}
+@media screen and (min-width: 500px){
+  #headline{
+    font-size: 3.5rem;
+  }
+}
+p {
+  color: black;
+}
+#poop {
+  max-width: 100px;
+  margin: 20px;
+  opacity: 0;
+}
+#footer_poop_left {
+  max-width: 50px;
+  float: left;
+}
+#footer_poop_right {
+  max-width: 50px;
+  float: right;
+}
