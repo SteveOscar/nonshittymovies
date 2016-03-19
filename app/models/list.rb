@@ -77,6 +77,6 @@ class List
   end
 
   def bad
-    ["will kind of suck.", "isn't very good.", "is hard to recommend.", "will be shit."]
+    ["will kind of suck.", "isn't very good.", "is hard to recommend.", "is not worth your time."]
   end
 end

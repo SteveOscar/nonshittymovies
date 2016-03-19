@@ -1,43 +1,43 @@
 <div class="row">
   <div class="content col s12 m6 l4">
     <div class="score">
-      <h6>Metacritic Score: <%= @movie1[:score] %> </h6>
+      <h6>Metacritic Score: <%= @movies.movie1[:score] %> </h6>
     </div>
 
     <div class="poster">
-      <a target="blank" href="http://www.metacritic.com/movie/<%=@movie1[:title].downcase.gsub(' ', '-')%>"><img src="<%= @poster1 %>" /></a>
+      <a target="blank" href="http://www.metacritic.com/movie/<%=@movies.movie1[:title].downcase.gsub(' ', '-')%>"><img src="<%= @movies.poster1 %>" /></a>
     </div>
 
     <div class="banner">
-      <h6> <%= @movie1[:title] %> <%= @comment1 %> </h6>
+      <h6> <%= @movies.movie1[:title] %> <%= @movies.comment1 %> </h6>
     </div>
   </div>
 
   <div class="content col s12 m6 l4">
     <div class="score">
-      <h6>Metacritic Score: <%= @movie2[:score] %> </h6>
+      <h6>Metacritic Score: <%= @movies.movie1[:score] %> </h6>
     </div>
 
     <div class="poster">
-      <a target="blank" href="http://www.metacritic.com/movie/<%=@movie2[:title].downcase.gsub(' ', '-')%>"><img src="<%= @poster2 %>" /></a>
+      <a target="blank" href="http://www.metacritic.com/movie/<%=@movies.movie2[:title].downcase.gsub(' ', '-')%>"><img src="<%= @movies.poster2 %>" /></a>
     </div>
 
     <div class="banner">
-      <h6> <%= @movie2[:title] %> <%= @comment2 %> </h6>
+      <h6> <%= @movies.movie2[:title] %> <%= @movies.comment2 %> </h6>
     </div>
   </div>
 
   <div class="content col s12 m6 l4 ">
     <div class="score">
-      <h6>Metacritic Score: <%= @movie3[:score] %> </h6>
+      <h6>Metacritic Score: <%= @movies.movie3[:score] %> </h6>
     </div>
 
     <div class="poster">
-      <a target="blank" href="http://www.metacritic.com/movie/<%=@movie3[:title].downcase.gsub(' ', '-')%>"><img src="<%= @poster3 %>" /></a>
+      <a target="blank" href="http://www.metacritic.com/movie/<%=@movies.movie3[:title].downcase.gsub(' ', '-')%>"><img src="<%= @movies.poster3 %>" /></a>
     </div>
 
     <div class="banner">
-      <h6> <%= @movie3[:title] %> <%= @comment3 %> </h6>
+      <h6> <%= @movies.movie3[:title] %> <%= @movies.comment3 %> </h6>
     </div>
   </div>
 </div>
