@@ -1,5 +1,4 @@
 class MoviesApp < Sinatra::Base
-
   get '/' do
     erb :dashboard
   end
