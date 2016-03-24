@@ -5,8 +5,11 @@ GEM
     coderay (1.1.0)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
-    fastimage (1.8.1)
-      addressable (~> 2.3, >= 2.3.5)
+    fastimage (2.0.0)
+      addressable (~> 2)
+    fotofetch (1.1.1)
+      fastimage (~> 2.0.0)
+      mechanize
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     mechanize (2.7.3)
@@ -51,7 +54,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastimage
+  fotofetch (~> 1.1.1)
   mechanize
   minitest
   nokogiri

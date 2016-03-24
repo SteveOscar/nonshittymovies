@@ -41,8 +41,7 @@ class List
     # @ff = Fotofetch::Fetch.new
     # link = @ff.fetch_links("tesla", 1)
     # @ff.save_images(link, './images')
-    byebug
-    
+
     "/images/#{film.downcase.gsub(' ', '-')}.jpg"
   end
 

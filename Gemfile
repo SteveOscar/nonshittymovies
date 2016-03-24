@@ -6,4 +6,5 @@ gem "minitest"
 gem "pry"
 gem "nokogiri"
 gem "mechanize"
-gem 'fastimage'
+# gem 'fastimage'
+gem 'fotofetch', "~> 1.1.1"

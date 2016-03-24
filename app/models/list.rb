@@ -1,7 +1,6 @@
 require 'open-uri'
 require 'mechanize'
 require 'pry'
-require_relative 'poster_fetch'
 
 class List
   def fetch_movies
@@ -14,9 +13,9 @@ class List
 
   def fetch_poster(film)
     unless File.exist?("app/public/images/#{film.downcase.gsub(' ', '-')}.jpg")
-      pf = PosterFetch.new
+      pf = Fotofetch::Fetch.new
       link = pf.fetch_links("#{film} movie poster 2016", 1, -900, -900).values.first
-      pf.save_images(link, "app/public/images/#{film.downcase.gsub(' ', '-')}.jpg")
+      save_images(link, "app/public/images/#{film.downcase.gsub(' ', '-')}.jpg")
     end
     "/images/#{film.downcase.gsub(' ', '-')}.jpg"
   end
@@ -62,6 +61,11 @@ class List
     comment = mediocre.sample if (movie[:score].to_i) > 50 && (movie[:score].to_i < 69)
     comment = bad.sample if movie[:score].to_i <= 50
     comment
+  end
+
+  def save_images(urls, file_path)
+    download = open(urls)
+    IO.copy_stream(download, file_path)
   end
 
   def great
