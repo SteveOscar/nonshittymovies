@@ -4,8 +4,6 @@
 Author: Steven Olson
 
 Live Version: [http://www.nonshittymovies.com/](http://www.nonshittymovies.com/)  
-  
-![RambleMap](http://g.recordit.co/75PxAkj6hv.gif)
 
 ### Overview
 
