@@ -69,15 +69,15 @@ class List
   end
 
   def great
-    ["is fucking great.", "is seriously good.", "is a rare movie treat.", "is a cinematic orgasm"]
+    ["is fucking great.", "is seriously good.", "is a rare movie treat.", "is a cinematic orgasm.", "... just go see it."]
   end
 
   def good
-    ["is pretty goddam decent.", "should keep you off your phone.", "is worth putting pants on for."]
+    ["is pretty goddam decent.", "should keep you off your phone.", "is worth putting pants on for.", "shan't disappoint you."]
   end
 
   def mediocre
-    ["is... fairly unshitty.", "beats boredom, at least.", "ain't a classic, but it'll do."]
+    ["is... fairly unshitty.", "beats boredom, at least.", "ain't a classic, but it'll do.", "could go either way."]
   end
 
   def bad
